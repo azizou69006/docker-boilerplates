@@ -16,7 +16,7 @@ RUN apt-get update && \
 
 # Copy the license and jar file into the image
 ADD license.properties ./
-ADD cq-quickstart-6.3.0.jar cq-quickstart.jar
+ADD cq-quickstart-6.5.0.jar cq-quickstart.jar
 
 # Unpack the jar for future use on other images
 RUN java -jar cq-quickstart.jar -unpack
